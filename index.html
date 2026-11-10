@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>FSBuy spreadsheet | Categorías, tallas y fotos QC</title>
+  <meta name="description" content="Explora diez categorías en Cafans con esta guía de FSBuy spreadsheet. Compara tallas, revisa fotos QC y calcula el coste total antes de pedir.">
+  <meta name="theme-color" content="#e8f3d7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FSBuy spreadsheet | Categorías, tallas y fotos QC">
+  <meta property="og:description" content="Diez categorías en Cafans y una guía en español para comparar enlaces, medidas, fotos y costes de envío.">
+  <meta property="og:image" content="https://cdn.sneakersquad.nl/uploads/sneakers/CN0149-001.png?bg=FFF&amp;fit=fill&amp;fm=webp&amp;h=1200&amp;pad=40&amp;signature=6669ef02&amp;trim=auto&amp;trim-sd=1&amp;v=1701688038&amp;w=1200">
+  <meta property="og:image:alt" content="Vista lateral de una zapatilla Nike P-6000 plateada">
+  <link rel="preconnect" href="https://cdn.sneakersquad.nl">
+  <!--
+    Investigación editorial. Bing no devolvió una primera página accesible. Se contrastaron resultados web de
+    fsbuy-spreadsheet.com, fsbuy.org, fsbuy.net, qcradar.com, maisonlooks.com, fsbuy.com,
+    fsbuyspreadsheets.com, fsbuy.homes, w2cspreadsheet.com y cafans.com.
+    Consultas secundarias: enlaces de productos FSBuy, guía de tallas, fotos QC de almacén, coste total del pedido.
+    Consultas específicas: enlaces de zapatillas por categoría, ficha original en Weidian, ficha original en Taobao,
+    ficha original en 1688, comprobar la variante del vendedor, buscar un enlace caducado, talla EU en zapatillas,
+    longitud de la plantilla, ancho de pecho en plano, largo de manga desde el hombro, ancho de cintura en plano,
+    tiro delantero del pantalón, caída de una camiseta, contorno de una gorra, talla de una pulsera,
+    fotos del par completo, foto de la etiqueta interior, foto de la suela, foto del cierre,
+    revisar la impresión de un dorsal, peso real del paquete, peso volumétrico, envío dentro de China,
+    comisión del intermediario, cambio de moneda, plazo de devolución.
+  -->
+  <style>
+    :root{color-scheme:light;--ink:#252033;--muted:#514a5e;--paper:#fbf9f5;--mint:#e8f3d7;--purple:#432d62;--line:#d6cfdc;--white:#fff}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure,dl,dd{margin:0}
+    h1,h2,h3{line-height:1.13;overflow-wrap:anywhere}
+    h1{font-size:clamp(2.55rem,6.8vw,5.65rem);letter-spacing:-.065em}
+    h2{font-size:clamp(1.8rem,4.2vw,3.2rem);letter-spacing:-.045em}
+    h3{font-size:1.22rem}
+    a{color:inherit;text-underline-offset:.18em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #6b3ea1;outline-offset:3px}
+    img{display:block;width:100%;height:auto;background:var(--white);color:var(--ink)}
+    .wrap{width:min(74rem,calc(100% - 2rem));margin-inline:auto}
+    .top{border-bottom:1px solid var(--line)}
+    .top .wrap,.foot .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1rem;padding-block:.75rem}
+    .brand{display:inline-flex;align-items:center;min-height:44px;color:var(--purple);font-weight:850}
+    .tag{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .hero{background:var(--mint)}
+    .hero .wrap{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);align-items:center;gap:clamp(1.25rem,4vw,3.5rem);padding-block:clamp(1.65rem,5vw,4.3rem)}
+    .hero h1{margin:.4rem 0 .75rem}
+    .hero p:not(.tag){max-width:55ch}
+    .directory{margin-top:1.35rem}
+    .directory h2{font-size:1rem;letter-spacing:0}
+    .directory ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 .9rem;list-style:none;margin:.45rem 0 0;padding:0}
+    .directory a{display:flex;align-items:center;gap:.55rem;min-height:44px;border-top:1px solid #aab997;padding:.32rem .1rem;text-decoration:none;font-weight:680}
+    .directory a::after{content:"↗";margin-left:auto;color:var(--purple)}
+    .directory a:hover{text-decoration:underline}
+    .directory span{font-size:.76rem;font-variant-numeric:tabular-nums;color:#4a5a40}
+    .hero figure{background:var(--white);border:1px solid #aab997}
+    .hero img{aspect-ratio:1;object-fit:contain}
+    figcaption{padding:.7rem .85rem;font-size:.87rem;line-height:1.4}
+    .hero figcaption{background:var(--purple);color:var(--white)}
+    .band{padding-block:clamp(2.2rem,5vw,4.5rem);border-bottom:1px solid var(--line)}
+    .heading{max-width:66ch;margin-bottom:1.3rem}
+    .heading h2{margin:.35rem 0 .65rem}
+    .band .tag{color:var(--purple)}
+    .intro{max-width:64ch;color:var(--muted)}
+    .manual{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:clamp(1.35rem,5vw,4rem);align-items:start}
+    .steps article{display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:.65rem;padding:1rem 0;border-top:1px solid var(--line)}
+    .steps .number{color:var(--purple);font-weight:800}
+    .steps p{margin-top:.45rem}
+    .worksheet{background:#eee7f4;border-left:4px solid var(--purple);padding:clamp(.95rem,3vw,1.55rem)}
+    .worksheet h3{margin:.35rem 0 .7rem}
+    .worksheet div{border-top:1px solid #c9bbd3;padding:.45rem 0}
+    .worksheet dt{font-weight:750}
+    .worksheet dd{color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+    .gallery figure{background:var(--white);border:1px solid var(--line)}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .gallery strong{display:block;margin-bottom:.25rem}
+    .faq{max-width:50rem}
+    details{border-top:1px solid var(--line)}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:750;padding:.8rem .2rem}
+    details p{padding:0 .2rem 1rem;max-width:65ch}
+    .foot{background:var(--mint);padding-block:.5rem}
+    @media(max-width:760px){
+      .hero .wrap,.manual{grid-template-columns:1fr}
+      .hero figure{width:min(100%,23rem)}
+      .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:360px){.directory ul{column-gap:.4rem}.directory a{font-size:.88rem;gap:.3rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "es",
+    "name": "FSBuy spreadsheet | Categorías, tallas y fotos QC",
+    "description": "Explora diez categorías en Cafans con esta guía de FSBuy spreadsheet. Compara tallas, revisa fotos QC y calcula el coste total antes de pedir.",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un FSBuy spreadsheet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Es una lista organizada de enlaces y notas para comparar artículos. Esta guía independiente enlaza a diez categorías de Cafans y explica qué revisar en cada ficha."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué hago si un enlace ya no abre?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Busca en la misma categoría por modelo y variante. Abre la ficha vigente y comprueba el vendedor, el color y la talla antes de sustituir el enlace guardado."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué fotos QC conviene pedir para unas zapatillas?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Pide una foto del par completo y fotos de los laterales, las suelas y las etiquetas interiores. Si dudas entre tallas, solicita también una foto de la plantilla junto a una regla."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo comparo dos tallas si las etiquetas usan sistemas distintos?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Compara las medidas en centímetros con una prenda o un par que te quede bien. Confirma que ambas medidas se hayan tomado del mismo modo."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué incluyo al estimar el coste total de un pedido?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Incluye el artículo, el envío interno, la comisión si corresponde, el cambio de moneda y el envío internacional. Comprueba qué impuestos o gastos de gestión pueden aplicarse en el destino."}
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/gezbi/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <span class="tag">Guía de compra · Edición en español</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <div>
+          <p class="tag">Directorio y guía de compra</p>
+          <h1 id="page-title">FSBuy spreadsheet</h1>
+          <p>Abre una categoría de Cafans y compara los artículos por talla, fotos y coste de envío. Esta guía independiente te ayuda a decidir qué enlaces merece la pena guardar y qué datos conviene pedir antes de comprar.</p>
+          <nav class="directory" aria-labelledby="directory-title">
+            <h2 id="directory-title">Categorías en Cafans</h2>
+            <ul>
+              <li><a href="https://cafans.com/category-911-Shoes.html"><span aria-hidden="true">01</span> Calzado</a></li>
+              <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span> Sudaderas y jerséis</a></li>
+              <li><a href="https://cafans.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span> Camisetas</a></li>
+              <li><a href="https://cafans.com/category-914-Jackets.html"><span aria-hidden="true">04</span> Chaquetas</a></li>
+              <li><a href="https://cafans.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span> Pantalones y shorts</a></li>
+              <li><a href="https://cafans.com/category-916-Headwear.html"><span aria-hidden="true">06</span> Gorras y sombreros</a></li>
+              <li><a href="https://cafans.com/category-917-Sets.html"><span aria-hidden="true">07</span> Conjuntos</a></li>
+              <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span> Ropa interior</a></li>
+              <li><a href="https://cafans.com/category-919-Jersey.html"><span aria-hidden="true">09</span> Camisetas deportivas</a></li>
+              <li><a href="https://cafans.com/category-920-Accessories.html"><span aria-hidden="true">10</span> Accesorios</a></li>
+            </ul>
+          </nav>
+        </div>
+        <figure>
+          <img src="https://cdn.sneakersquad.nl/uploads/sneakers/CN0149-001.png?bg=FFF&amp;fit=fill&amp;fm=webp&amp;h=1200&amp;pad=40&amp;signature=6669ef02&amp;trim=auto&amp;trim-sd=1&amp;v=1701688038&amp;w=1200" width="1200" height="1200" alt="Vista lateral de una zapatilla Nike P-6000 plateada con el Swoosh negro" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Nike P-6000 · Vista lateral de referencia para comparar la malla, el talón y la unión con la suela.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="band" aria-labelledby="manual-title">
+      <div class="wrap manual">
+        <div>
+          <div class="heading">
+            <p class="tag">Cuaderno de compra</p>
+            <h2 id="manual-title">De un enlace guardado a una decisión</h2>
+            <p class="intro">Elige dos artículos de la misma categoría y compara la variante exacta. Si uno tiene fotos más claras o mejores medidas, anota qué diferencia resolvería tu duda.</p>
+          </div>
+          <div class="steps">
+            <article>
+              <span class="number" aria-hidden="true">01</span>
+              <div>
+                <h3>Enlaces de productos FSBuy y ficha original</h3>
+                <p>Si encuentras la ficha original en Weidian, Taobao o 1688, guarda el enlace y anota el vendedor, el color, la talla y la fecha de consulta. Si un enlace caduca, busca de nuevo por modelo y variante. Una miniatura parecida puede corresponder a otro artículo.</p>
+              </div>
+            </article>
+            <article>
+              <span class="number" aria-hidden="true">02</span>
+              <div>
+                <h3>Guía de tallas con una prenda que ya usas</h3>
+                <p>Para calzado, compara la longitud de la plantilla además de la talla EU. En una camiseta o sudadera, mide el ancho de pecho en plano. Para una chaqueta, comprueba el largo de manga desde el hombro. En pantalones, apunta el ancho de cintura y el tiro delantero.</p>
+              </div>
+            </article>
+            <article>
+              <span class="number" aria-hidden="true">03</span>
+              <div>
+                <h3>Fotos QC de almacén</h3>
+                <p>QC significa control de calidad. Pide las imágenes que resuelvan una duda concreta: la etiqueta interior para confirmar la variante, la suela para ver su acabado, el cierre de una pulsera o el dorsal de una camiseta deportiva. Las fotos permiten revisar detalles visibles y, por sí solas, no acreditan la autenticidad.</p>
+              </div>
+            </article>
+            <article>
+              <span class="number" aria-hidden="true">04</span>
+              <div>
+                <h3>Coste total del pedido</h3>
+                <p>Anota por separado el precio del artículo, el envío dentro de China, la comisión del intermediario, el cambio de moneda y el envío internacional. Consulta si el transportista calcula la tarifa por peso real o volumétrico y revisa el plazo de devolución antes de confirmar.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <aside class="worksheet" aria-labelledby="worksheet-title">
+          <p class="tag">Plantilla para copiar</p>
+          <h3 id="worksheet-title">Una ficha por variante</h3>
+          <dl>
+            <div><dt>Artículo</dt><dd>Modelo, categoría, color y talla.</dd></div>
+            <div><dt>Origen</dt><dd>Enlace del vendedor y fecha de revisión.</dd></div>
+            <div><dt>Medida clave</dt><dd>Centímetros y puntos entre los que se midió.</dd></div>
+            <div><dt>Foto pendiente</dt><dd>Ángulo o detalle que necesitas ver.</dd></div>
+            <div><dt>Entrega</dt><dd>Destino, coste estimado y devolución.</dd></div>
+            <div><dt>Decisión</dt><dd>Guardar, pedir un dato más o descartar.</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+    <section class="band" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="tag">Archivo visual</p>
+          <h2 id="gallery-title">Qué pedir en la siguiente foto</h2>
+          <p class="intro">Estas imágenes son referencias editoriales. Usa sus detalles para pedir fotos de la variante que quieres comparar.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1758093305/796395_XJHKE_9692_003_100_0000_Light-cotton-jersey-t-shirt-with-embroidery.jpg" width="1200" height="1200" alt="Modelo con camiseta blanca Gucci de cuello redondo y manga corta" loading="lazy" decoding="async">
+            <figcaption><strong>Camiseta Gucci</strong>Pide una foto de la prenda extendida para comparar el ancho de pecho y la caída de los hombros.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://in.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-light-reversible-cap--M5785L_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" alt="Gorra Louis Vuitton marrón con motivo Monogram y visera curva" loading="lazy" decoding="async">
+            <figcaption><strong>Gorra Louis Vuitton</strong>Pide una vista trasera del ajuste y comprueba el contorno de la gorra.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.squarespace-cdn.com/content/v1/580cf7ce6b8f5b3576a3da9f/1668647023197-XB498H1037N6PNH2R0G0/chaine-d-ancre-enchainee-ring-small-model--109507B%2B00-front-1-300-0-800-800_b.jpg" width="800" height="800" alt="Anillo plateado Hermès Chaîne d’Ancre Enchaînée con motivos de eslabones" loading="lazy" decoding="async">
+            <figcaption><strong>Anillo Hermès</strong>Pide una toma lateral y el diámetro interior medido en milímetros.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://assets.christiandior.com/is/image/diorprod/3SN279ZRDH868_SBG_E02-1?$r4x5_raw$=&amp;bfc=on&amp;crop=0,0,4000,5000&amp;hei=600&amp;qlt=76&amp;scale=1&amp;wid=480" width="480" height="600" alt="Zapatilla Dior B30 Countdown de malla gris con firma CD30 lateral" loading="lazy" decoding="async">
+            <figcaption><strong>Dior B30 Countdown</strong>Pide una foto de los dos talones juntos y otra de cerca de la unión entre la malla y la suela.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="band" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="tag">Respuestas rápidas</p>
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>¿Qué es un FSBuy spreadsheet?</summary>
+            <p>Es una lista organizada de enlaces y notas para comparar artículos. Esta guía independiente enlaza a diez categorías de Cafans y explica qué revisar en cada ficha.</p>
+          </details>
+          <details>
+            <summary>¿Qué hago si un enlace ya no abre?</summary>
+            <p>Busca en la misma categoría por modelo y variante. Abre la ficha vigente y comprueba el vendedor, el color y la talla antes de sustituir el enlace guardado.</p>
+          </details>
+          <details>
+            <summary>¿Qué fotos QC conviene pedir para unas zapatillas?</summary>
+            <p>Pide una foto del par completo y fotos de los laterales, las suelas y las etiquetas interiores. Si dudas entre tallas, solicita también una foto de la plantilla junto a una regla.</p>
+          </details>
+          <details>
+            <summary>¿Cómo comparo dos tallas si las etiquetas usan sistemas distintos?</summary>
+            <p>Compara las medidas en centímetros con una prenda o un par que te quede bien. Confirma que ambas medidas se hayan tomado del mismo modo.</p>
+          </details>
+          <details>
+            <summary>¿Qué incluyo al estimar el coste total de un pedido?</summary>
+            <p>Incluye el artículo, el envío interno, la comisión si corresponde, el cambio de moneda y el envío internacional. Comprueba qué impuestos o gastos de gestión pueden aplicarse en el destino.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p>Guía editorial independiente · Fotografías de referencia</p>
+      <a class="brand" href="https://www.cafans.com">Explorar www.cafans.com</a>
+    </div>
+  </footer>
+</body>
+</html>
